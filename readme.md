@@ -1,25 +1,10 @@
-# Mountain Pass API (SF 09.2022)
+# Mountain Pass
 
 API for submitting mountain pass data
 
 * FastAPI
-* BeanieODM
 * MongoDB
 * Motor
-
-## Setup
-
-Edit `compose.yaml` to set mongo credentials
-
-```shell
-docker-compose -f compose.yaml up
-```
-
-Edit `.env` file or set `FSTR_MONGO_URI`, `FSTR_UPLOAD_DIR` environment variables
-
-```shell
-uvicorn main:app --port 8089 --reload
-```
 
 ## API Methods
 
@@ -38,7 +23,3 @@ Save new mountain pass data to DB
 `PATCH /submitData/{id}` 
 
 Edit existing mountain pass data
-
-### Swagger doc
-
-Swagger docs also available at `http://localhost:8089/docs`
