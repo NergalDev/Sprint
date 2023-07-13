@@ -54,3 +54,5 @@ def test_app():
                             params={'user__email': 'john_doe_1969@example.com'})
 
     assert response.status_code == 200
+    
+    1
